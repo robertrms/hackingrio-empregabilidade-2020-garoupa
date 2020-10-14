@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vagas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>  
+ <div class="container-fluid col-12">
+    <header>
+        <div class="row header justify-content-end">
+            <nav class ="d-flex ">
+               <ul class="second-menu">
+                  <li class="nav-item">
+                     <a class="nav-link" th:href="@{/anuncio}">Anúnciar</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href=""><img src="../../img/alerta2.png" alt=""> Contato</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href=""><img src="../../img/alerta2.png" alt=""> Sobre nós</a>
+                 </li>
+                <li class="nav-item">
+                     <a class="nav-link" th:href="@{/login}">Sair</a>
+                 </li>
+             </ul>
+         </nav>
+     </div>
+ </header>
+
+ <div class="row body-vagas">
+    <div class="col-1">
+
+    </div>
+
+    <div class="col-10">
+        <div class="card" >
+        <div class="card-body card-vagas">
+            <h5 class="card-title">Estagiário</h5>
+            <p class="card-text">Atividades: Apoiar nas tratativas e construção de estratégias de negociações com clientes com foco na fidelização e manutenção da base já ativa; Auxiliar, sugerir mudanças e consolidar os processos internos para aperfeiçoar técnicas voltadas à manutenção da base.</p>
+            <a th:href="@{/vagas/informacao}" class="btn btn-primary">Saber mais</a>
+        </div>
+    </div>
+
+            <div class="card card-vagas" >
+        <div class="card-body">
+            <h5 class="card-title">Técnico Segurança do Trabalho</h5>
+            <p class="card-text">Principais Atividades: - Auxiliar área Administrativa, criar e acompanhar as requisições de serviços e controle de indicadores.   Requisitos: - Cursando a partir do 4º período superior em: Administração, contábeis ou áreas afins. - Diferencial Excel em nível intermediário.</p>
+            <a th:href="@{/vagas/informacao}" class="btn btn-primary">Saber mais</a>
+        </div>
+    </div>
+            <div class="card card-vagas">
+        <div class="card-body">
+            <h5 class="card-title">Analista de Sistema</h5>
+            <p class="card-text">Responsabilidades: Atender ligações receptivas de clientes. Solucionar dúvidas e prestar informações ao cliente referente a como comprar, prazo de entrega, meios de pagamento, e etc. Solucionar dúvidas referentes à plataforma Reclame Aqui.   Requisitos: Ensino superior cursando; Pacote Office; Técnicas de Negociação.</p>
+            <a th:href="@{/vagas/informacao}" class="btn btn-primary">Saber mais</a>
+        </div>
+    </div>
+
+            <div class="card card-vagas">
+        <div class="card-body">
+            <h5 class="card-title">Chefe de cozinha</h5>
+            <p class="card-text">Requisitos: - Estar matriculado no 6° período em diante, nos cursos de: Engenharia Química;Engenharia de Materiais;Engenharia de Produção.   - Inglês Intermediário</p>
+            <a th:href="@{/vagas/informacao}" class="btn btn-primary">Saber mais</a>
+        </div>
+    </div>
+
+<nav aria-label="Navegação de página exemplo">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1">Anterior</a>
+    </li>
+    <li class="page-item"><a class="page-link" th:href="@{/vagas}">1</a></li>
+    <li class="page-item"><a class="page-link" th:href="@{/vagas}">2</a></li>
+    <li class="page-item"><a class="page-link" th:href="@{/vagas}">3</a></li>
+    <li class="page-item">
+      <a class="page-link" th:href="@{/vagas}">Próximo</a>
+    </li>
+  </ul>
+</nav>
+</div>
+
+<div class="col-1">
+
+</div>
+</div>
+
+<div class="row">
+   <nav class ="Main-Menu">
+    <div class="hamburguer-menu">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+    </div>
+    <ul class="nav-list">
+        <li class="nav-item">
+            <a th:href="@{/index}" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link"><img src="../../img/alerta2.png" alt=""> Perfil</a>
+        </li>
+        <li class="nav-item">
+            <a th:href="@{/freelancer}" class="nav-link">Freelancers</a>
+        </li>
+        <li class="nav-item">
+            <a th:href="@{/projeto}" class="nav-link">Projetos</a>
+        </li>
+        <li class="nav-item">
+            <a th:href="@{/profissional}" class="nav-link">Orientação Profissional</a>
+        </li>
+
+    </ul>
+</nav>
+</div>
+<footer>       
+    <div class="row footer">             
+      <p>Copyright © 2020 Talentos RJ. Todos os direitos reservados.</p>        
+  </div>     
+</footer>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orientação Profissional</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/style.css">
+
+</head>
+
+<body>  
+ <div class="container-fluid col-12">
+    <header>
+        <div class="row header justify-content-end">
+            <nav class ="d-flex ">
+               <ul class="second-menu">
+                 <li class="nav-item">
+                     <a class="nav-link" th:href="@{/anuncio}">Anúnciar</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href=""><img src="img/alerta2.png" alt=""> Contato</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href=""><img src="img/alerta2.png" alt=""> Sobre nós</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" th:href="@{/login}">Sair</a>
+                 </li>
+             </ul>
+         </nav>
+     </div>
+ </header>
+ 
+ <div class="row" style="margin-top: 30px;">
+ <div class="col-4"></div>
+ <div class="col-4">
+ 	<h1 style="text-align: center;">Orientação Profissional</h1>
+ </div>
+ <div class="col-4"></div>
+ </div>
+ 
+ <div class="row mid">
+ 	<div class="col-1">
+ 	</div>
+    <div class="col-4">
+        <img src="../../img/oque.png" alt="">
+    </div>
+    <div class="Anuncio col-6">
+        <h3><strong>Nós do Senac te ajudamos alavancar a sua carreira profissional!</strong> </h3>
+        <h4>Agora você tem acesso a tutoriais de carreira e criação de curriculo, e-livros, videos informativos sobre o meio, alem dos PodCasts, Palestras e Lives exclusivas.</h4>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+<section class="row">
+    <div class="col2 col-md-3 d-flex justify-content-center">
+        <div class="card">
+            <img class="card-img-top" src="img/podcast.png" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title"><strong>Podcast</strong></h5>
+                <p class="card-text">As maiores novidades da tecnologia você encontra aqui! Acesse Já!</p>
+                <a href="#" class="btn mybtn">Acesse</a>
+            </div>
+        </div>
+    </div>
+    <div class="col2 col-md-3 d-flex justify-content-center">
+        <div class="card">
+            <img class="card-img-top" src="img/palestra.png" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title"><strong>Palestras</strong></h5>
+                <p class="card-text">Convidamos profissionais da área para falarem sobre carreira, vida pessoal e dicas para conseguir o primeiro emprego.</p>
+                <a href="#" class="btn mybtn">Acesse</a>
+            </div>
+        </div>
+    </div>
+    <div class="col2 col-md-3 d-flex justify-content-center">
+        <div class="card">
+            <img class="card-img-top" src="img/live.jpg" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title"><strong>Lives</strong></h5>
+                <p class="card-text">Assista agora as lives gravadas sobre os mais variados assuntos!</p>
+                <a href="#" class="btn mybtn">Acesse</a>
+            </div>
+        </div>
+    </div>
+    <div class="col2 col-md-3 d-flex justify-content-center">
+        <div class="card">
+            <img class="card-img-top" src="img/ebook.png" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title"><strong>E-books</strong></h5>
+                <p class="card-text">Leia agora E-books gratuitos de sua matricula!.</p>
+                <a href="#" class="btn mybtn">Acesse</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- O menu lateiral precisa ficar por ultimo para sobrepor todos os itens -->
+<div class="row">
+           <nav class ="Main-Menu">
+            <div class="hamburguer-menu">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a th:href="@{/index}" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link"><img src="img/alerta2.png" alt=""> Perfil</a>
+                </li>
+                <li class="nav-item">
+                    <a th:href="@{/vagas}" class="nav-link">Vagas</a>
+                </li>
+                <li class="nav-item">
+                    <a th:href="@{/freelancer}" class="nav-link">Freelancers</a>
+                </li>
+                <li class="nav-item">
+                    <a th:href="@{/projeto}" class="nav-link">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a th:href="@{/profissional}" class="nav-link">Orientação Profissional</a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+    <footer>       
+        <div class="row footer">             
+              <p>Copyright © 2020 Talentos RJ. Todos os direitos reservados.</p>        
+        </div>     
+    </footer>
+</div>
+
+<script src="../../js/main.js"></script>
+</body>
+</html>

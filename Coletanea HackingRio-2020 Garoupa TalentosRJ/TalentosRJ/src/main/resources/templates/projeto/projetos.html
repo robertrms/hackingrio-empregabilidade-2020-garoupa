@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/style.css">
+
+</head>
+
+<body>  
+ <div class="container-fluid col-12">
+    <header>
+        <div class="row header justify-content-end">
+            <nav class ="d-flex ">
+               <ul class="second-menu">
+                <li class="nav-item">
+                     <a class="nav-link" th:href="@{/anuncio}">Anúnciar</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href=""><img src="../../img/alerta2.png" alt=""> Contato</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href=""><img src="../../img/alerta2.png" alt=""> Sobre nós</a>
+                 </li>
+                <li class="nav-item">
+                     <a class="nav-link" th:href="@{/login}">Sair</a>
+                 </li>
+             </ul>
+         </nav>
+     </div>
+ </header>
+
+ <div class="row body-projetos">
+    <div class="col-1">
+
+    </div>
+
+    <div class="col-10">
+        <div class="card" >
+        <div class="card-body card-projetos">
+            <h5 class="card-title">Sistema de vendas</h5>
+            <p class="card-text">Um software de gestão de vendas precisa possuir integração entre vendas, compras, financeiro, pagamentos, recebimentos e estoque dos produtos. Esta integração entre os módulos permite que o empreendedor otimize seu tempo. Agilizando ainda mais os processos operacionais você poderá se concentrar no que realmente importa, o sucesso de seu negócio!</p>
+            <a th:href="@{/projeto/informacao}" class="btn btn-primary">Saber mais</a>
+        </div>
+    </div>
+
+            <div class="card card-projetos" >
+        <div class="card-body">
+            <h5 class="card-title">Arquitetura</h5>
+            <p class="card-text">Arquitetura refere-se a toda construção e modelagem artificial do ambiente físico, incluindo seu processo de projeto e o produto deste, sendo a palavra também usada para definir os estilos e métodos de projeto das construções de uma época. </p>
+            <a th:href="@{/projeto/informacao}" class="btn btn-primary">Saber mais</a>
+        </div>
+    </div>
+            <div class="card card-projetos">
+        <div class="card-body">
+            <h5 class="card-title">Sistema de analise de redes</h5>
+            <p class="card-text">Comunicação em rede refere-se a transferência eletrônica de informações, comunicação mediada por um computador ou periférico. Com o surgimento das novas tecnologias, muito tem facilitado a informação circular livremente, emitida de pontos diversos.</p>
+            <a th:href="@{/projeto/informacao}" class="btn btn-primary">Saber mais</a>
+        </div>
+    </div>
+
+            <div class="card card-projetos">
+        <div class="card-body">
+            <h5 class="card-title">Sistema hidráulica</h5>
+            <p class="card-text">Hidráulica é a parte da física que se dedica a estudar o comportamento dos fluidos em movimento e em repouso. É responsável pelo conhecimento das leis que regem o transporte, a conversão de energia, a regulação e o controle do fluido agindo sobre suas variáveis.</p>
+            <a th:href="@{/projeto/informacao}" class="btn btn-primary">Saber mais</a>
+        </div>
+    </div>
+
+<nav aria-label="Navegação de página exemplo">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1">Anterior</a>
+    </li>
+    <li class="page-item"><a class="page-link" th:href="@{/projeto}">1</a></li>
+    <li class="page-item"><a class="page-link" th:href="@{/projeto}">2</a></li>
+    <li class="page-item"><a class="page-link" th:href="@{/projeto}">3</a></li>
+    <li class="page-item">
+      <a class="page-link" th:href="@{/projeto}">Próximo</a>
+    </li>
+  </ul>
+</nav>
+</div>
+
+<div class="col-1">
+
+</div>
+</div>
+
+<div class="row">
+   <nav class ="Main-Menu">
+    <div class="hamburguer-menu">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+    </div>
+    <ul class="nav-list">
+        <li class="nav-item">
+            <a th:href="@{/index}" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link"><img src="../../img/alerta2.png" alt=""> Perfil</a>
+        </li>
+        <li class="nav-item">
+            <a th:href="@{/vagas}" class="nav-link">Vagas</a>
+        </li>
+        <li class="nav-item">
+            <a th:href="@{/freelancer}" class="nav-link">Freelancers</a>
+        </li>
+        <li class="nav-item">
+            <a th:href="@{/profissional}" class="nav-link">Orientação Profissional</a>
+        </li>
+
+    </ul>
+</nav>
+</div>
+<footer>       
+    <div class="row footer">             
+      <p>Copyright © 2020 Talentos RJ. Todos os direitos reservados.</p>        
+  </div>     
+</footer>
+</div>
+
+<script src="../../js/main.js"></script>
+</body>
+</html>

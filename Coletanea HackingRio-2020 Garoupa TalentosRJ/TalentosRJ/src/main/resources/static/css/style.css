@@ -1,0 +1,207 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	min-height: 100vh;
+}
+
+.container-fluid {
+	background: #ffff;
+}
+
+.header {
+	background-color: #004bb5;
+	padding-top: 10px;
+	height: 100px;
+	align-items: center;
+	justify-content: center;
+}
+
+.second-menu {
+	display: flex;
+}
+
+.mid{
+	padding-top: 100px;
+ 	padding-bottom: 100px;
+}
+
+.anuncio {
+	width: 100%;
+	padding-top: 40px;
+	padding-bottom: 10px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	color: #FF4500;
+	justify-content: center;
+	text-align: center;
+}
+.Anuncio2{
+	padding-right: 90px;
+}
+.anuncioOrientacao {
+	padding-top: 90px;
+	padding-bottom: 30px;
+	display: flex;
+}
+
+.orient2 {
+	display: flex;
+}
+.mybtn{
+	color: #fff;
+	background-color:#FA9B1C;
+}
+.Main-Menu {
+	width: 300px;
+	height: 100%;
+	background-color: #004BB5;
+	position: fixed;
+	top: 0;
+	left: -300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0 20% 60% 0;
+	transition: left .8s cubic-bezier(1, 0, 0, 1);
+	border: 1px solid #ffba60;
+}
+
+.btn-light {
+	background-color: #FF4500;
+	color: white;
+}
+
+.change {
+	left: 0;
+}
+
+.hamburguer-menu {
+	width: 35px;
+	height: 30px;
+	position: fixed;
+	top: 38px;
+	left: 38px;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.line {
+	width: 100%;
+	height: 3px;
+	background-color: black;
+	transition: all 0.8s;
+}
+
+.change .line-1 {
+	transform: rotateZ(-45deg) translate(-8px, 6px);
+}
+
+.change .line-2 {
+	opacity: 0;
+}
+
+.change .line-3 {
+	transform: rotateZ(45deg) translate(-8px, -6px);
+}
+
+.nav-list {
+	text-align: center;
+}
+
+.nav-item {
+	list-style: none;
+	margin: 25px;
+}
+.nav-item :hover{
+	color: #fff;
+	
+  }
+
+.nav-link {
+	text-decoration: none;
+	font-size: 1rem;
+	color: #eee;
+	font-weight: 300;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	position: relative;
+	padding: 3px 0;
+}
+
+.nav-link::before, .nav-link::after {
+	content: "";
+	width: 100%;
+	height: 2px;
+	background-color: #FA9B1C;
+	position: absolute;
+	left: 0;
+	transform: scaleX(0);
+	transition: transform 0.5s;
+}
+
+.nav-link::after {
+	bottom: 0;
+	transform-origin: right;
+}
+
+.nav-link::before {
+	top: 0;
+	transform-origin: left;
+}
+
+.nav-link:hover::before, .nav-link:hover::after {
+	transform: scaleX(1);
+}
+
+.footer {
+	background-color: #004bb5;
+	color: white;
+	margin-top: 60px;
+	padding-top: 10px;
+	height: 50px;
+	align-items: center;
+	justify-content: center;
+}
+
+.card-vagas {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+.card-projetos {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+.card-freelancers {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.body-freelancers {
+	margin-top: 30px;
+}
+.body-projetos {
+	margin-top: 30px;
+}
+.body-vagas {
+	margin-top: 30px;
+}
+
+.projetoInformacao {
+	margin-bottom: 179px;
+}
+
+.freelancersInformacoes {
+	margin-top: 55px;
+	margin-bottom: 100px;
+}

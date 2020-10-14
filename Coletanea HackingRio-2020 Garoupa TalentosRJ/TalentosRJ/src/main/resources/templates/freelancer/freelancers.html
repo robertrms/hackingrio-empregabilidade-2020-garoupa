@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancers</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/style.css">
+
+</head>
+
+<body>  
+ <div class="container-fluid col-12">
+    <header>
+        <div class="row header justify-content-end">
+            <nav class ="d-flex ">
+               <ul class="second-menu">
+                <li class="nav-item">
+                     <a class="nav-link" th:href="@{/anuncio}">Anúnciar</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href=""><img src="../../img/alerta2.png" alt=""> Contato</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href=""><img src="../../img/alerta2.png" alt=""> Sobre nós</a>
+                 </li>
+                <li class="nav-item">
+                     <a class="nav-link" th:href="@{/login}">Sair</a>
+                 </li>
+             </ul>
+         </nav>
+     </div>
+ </header>
+
+ <div class="row body-freelancers">
+    <div class="col-2">
+
+    </div>
+
+    <div class="col-8">
+        <div class="card" >
+        <div class="card-body card-freelancers">
+            <h5 class="card-title">Robert Rodrigues</h5>
+            <p class="card-text">Tecnologias: Java | Html | Css</p>
+            <a th:href="@{/freelancer/informacao}" class="btn btn-primary">Entrar em contato mais</a>
+        </div>
+    </div>
+
+            <div class="card card-freelancers" >
+        <div class="card-body">
+            <h5 class="card-title">Alex Felipe</h5>
+            <p class="card-text">Tecnologias: Java | Html | Css</p>
+            <a th:href="@{/freelancer/informacao}" class="btn btn-primary">Entrar em contato mais</a>
+        </div>
+    </div>
+            <div class="card card-freelancers">
+        <div class="card-body">
+           <h5 class="card-title">Ramon Bezerra</h5>
+            <p class="card-text">Tecnologias: Java | Html | Css</p>
+            <a th:href="@{/freelancer/informacao}" class="btn btn-primary">Entrar em contato mais</a>
+        </div>
+    </div>
+
+            <div class="card card-freelancers">
+        <div class="card-body">
+            <h5 class="card-title">Kamila Willian</h5>
+            <p class="card-text">Tecnologias: Java | Html | Css</p>
+            <a th:href="@{/freelancer/informacao}" class="btn btn-primary">Entrar em contato mais</a>
+        </div>
+    </div>
+
+<nav aria-label="Navegação de página exemplo">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1">Anterior</a>
+    </li>
+    <li class="page-item"><a class="page-link" th:href="@{/freelancer}">1</a></li>
+    <li class="page-item"><a class="page-link" th:href="@{/freelancer}">2</a></li>
+    <li class="page-item"><a class="page-link" th:href="@{/freelancer}">3</a></li>
+    <li class="page-item">
+      <a class="page-link" th:href="@{/freelancer}">Próximo</a>
+    </li>
+  </ul>
+</nav>
+</div>
+
+<div class="col-2">
+
+</div>
+</div>
+
+<div class="row">
+   <nav class ="Main-Menu">
+    <div class="hamburguer-menu">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+    </div>
+    <ul class="nav-list">
+        <li class="nav-item">
+            <a th:href="@{/index}" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link"><img src="../../img/alerta2.png" alt=""> Perfil</a>
+        </li>
+        <li class="nav-item">
+            <a th:href="@{/vagas}" class="nav-link">Vagas</a>
+        </li>
+        <li class="nav-item">
+            <a th:href="@{/projeto}" class="nav-link">Projetos</a>
+        </li>
+        <li class="nav-item">
+            <a th:href="@{/profissional}" class="nav-link">Orientação Profissional</a>
+        </li>
+
+    </ul>
+</nav>
+</div>
+<footer>       
+    <div class="row footer">             
+      <p>Copyright © 2020 Talentos RJ. Todos os direitos reservados.</p>        
+  </div>     
+</footer>
+</div>
+
+<script src="../../js/main.js"></script>
+</body>
+</html>

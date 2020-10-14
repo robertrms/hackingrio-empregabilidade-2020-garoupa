@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/style.css">
+
+</head>
+
+<body>  
+ <div class="container-fluid col-12">
+    <header>
+        <div class="row header justify-content-end">
+            <nav class ="d-flex ">
+               <ul class="second-menu">
+                 <li class="nav-item">
+                     <a class="nav-link" th:href="@{/anuncio}">Anúnciar</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href=""><img src="../../img/alerta2.png" alt=""> Contato</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href=""><img src="../../img/alerta2.png" alt=""> Sobre nós</a>
+                 </li>
+                  <li class="nav-item">
+                     <a class="nav-link" th:href="@{/login}">Sair</a>
+                 </li>
+             </ul>
+         </nav>
+     </div>
+ </header>
+ 
+<!-- Banner de divulgação -->
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="../../img/banner2.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="..." alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="..." alt="Third slide">
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Card de vagas -->
+<div class="anuncio">
+    <h3>Vagas em destaque</h3>
+</div>
+<div class="row center">
+    <div class="col-2">
+
+    </div>
+    <div class="col-2 d-flex justify-content-center">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Técnico de Turismo</h5>
+                <p class="card-text">Contratamos técnico de turimos...</p>
+                <a href="#" class="btn btn-light">Candidatar-se</a>
+            </div>
+        </div>
+    </div>
+        <div class="col-2 d-flex justify-content-center">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Estagiário</h5>
+                <p class="card-text">Contratamos estagiário de desenvolvimento...</p>
+                <a href="#" class="btn btn-light">Candidatar-se</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-2 d-flex justify-content-center">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Estagiário</h5>
+                <p class="card-text">Contratamos estagiário de desenvolvimento...</p>
+                <a href="#" class="btn btn-light">Candidatar-se</a>
+            </div>
+        </div>
+    </div>
+        <div class="col-2 d-flex justify-content-center">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Garçom para hotel</h5>
+                <p class="card-text">Contratamos garçom para trabalhar...</p>
+                <a href="#" class="btn btn-light">Candidatar-se</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-2">
+
+    </div>
+</div>
+<section class="anuncioOrientacao">
+    <div class="container-fluid">
+        
+        <div class="row">
+            <div class="col-md-2">
+
+            </div>
+            <div class="col-md-4">
+                <div class="Imagem">
+                    <div class="icon"><img src="../../img/op.jpg" alt=""></div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="OrientCod">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-12">
+                            <h4><strong>ORIENTAÇÃO DO DIA</strong></h4>
+                            <p>
+                            Isso acontece porque <strong>MUITOS DESISTEM </strong>e não concluem, fazendo reopção de curso. Há ainda quem conclui e nem mesmo trabalha com o que estudou durante os anos na faculdade. Entre as maiores dúvidas dos que buscam a orientação profissional está a de entender como está o mercado de trabalho.
+                            </p>
+                            <a class="btn btn-primary" th:href="@{/profissional}">Saiba mais</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- PROJETOS DE ALUNOS EMPREENDEDORES -->
+<div class="anuncio">
+    <h3>Projetos de alunos em Destaque</h3>
+    
+</div>
+<div class="row center">
+    <div class="col-2">
+
+    </div>
+    <div class="col-2 d-flex justify-content-center">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Robert Silva</h5>
+                <p class="card-text">Sistema de vendas para mercadinhos na comunidade</p>
+                <a th:href="@{/projeto}" class="btn btn-light">Candidatar-se</a>
+            </div>
+        </div>
+    </div>
+        <div class="col-2 d-flex justify-content-center">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Alex Silva</h5>
+                <p class="card-text">Sistema financeiro para micro empresas novas </p>
+                <a th:href="@{/projeto}" class="btn btn-light">Candidatar-se</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-2 d-flex justify-content-center">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Lucas Truc</h5>
+                <p class="card-text">Projetos de arquitetura para empresas</p>
+                <a th:href="@{/projeto}" class="btn btn-light">Candidatar-se</a>
+            </div>
+        </div>
+    </div>
+        <div class="col-2 d-flex justify-content-center">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Felipe souza</h5>
+                <p class="card-text">Equipe de garçons para empresas que querem fazer festa</p>
+                <a th:href="@{/projeto}" class="btn btn-light">Candidatar-se</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-2">
+
+    </div>
+</div>
+<section class="anuncioOrientacao">
+    <div class="container-fluid">
+        
+        <div class="row">
+            
+            <div class="orient2 col-12">
+                <div class="col-2">
+
+                </div>
+                <div class="PodCod">
+                    <div class="row">
+                        <div class="Text-Pod " style="margin-right: 30px; margin-left: 20px;">
+                            <h2><strong>PODCAST TODA SEMANA</strong></em></h2>
+                            
+                            <br>
+                            <ul>
+                                <li> Veja dicas para alavancar seu curriculo</li>
+                                <li> Assita a <strong>Nova palestra</strong> de motivação.</li>
+                                <li> Ouça o <strong>Novo PodCast do SenacRio!</strong>.</li>
+                                
+                            </ul>
+                            <a class="btn btn-primary" th:href="@{/profissional}">Saiba mais</a>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                
+                <div class="col-md-2">
+                    <div class="Imagem">
+                        <div class="icon"><img src="../../img/Pod.jpg" alt=""></div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</section>
+
+    <!-- O menu lateiral precisa ficar por ultimo para sobrepor todos os itens -->
+        <div class="row">
+           <nav class ="Main-Menu">
+            <div class="hamburguer-menu">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a th:href="@{/index}" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link"><img src="../../img/alerta2.png" alt=""> Perfil</a>
+                </li>
+                <li class="nav-item">
+                    <a th:href="@{/vagas}" class="nav-link">Vagas</a>
+                </li>
+                <li class="nav-item">
+                    <a th:href="@{/freelancer}" class="nav-link">Freelancers</a>
+                </li>
+                <li class="nav-item">
+                    <a th:href="@{/projeto}" class="nav-link">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a th:href="@{/profissional}" class="nav-link">Orientação Profissional</a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+    <footer>       
+        <div class="row footer">             
+              <p>Copyright © 2020 Talentos RJ. Todos os direitos reservados.</p>        
+        </div>     
+    </footer>
+</div>
+
+<script src="../../js/main.js"></script>
+</body>
+</html>
